@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApp4.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Window4" Height="300" Width="300">
+    <Grid>
+        <Border Padding="10"
+        Background="Gray"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        CornerRadius="8">
+
+            <StackPanel HorizontalAlignment="Center"
+             VerticalAlignment="Center">
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text ="Введите значение x : "   />
+                    <TextBox Width ="40"  
+                      x:Name="Tbx4"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                 Margin="0 5 0 0">
+                    <TextBlock Text="Введите значение  y : " />
+                    <TextBox Width="40"
+                     x:Name = "Tby4"/>
+                </StackPanel>
+
+                  <Button  Margin=" 0 10 0 0"
+                       Foreground="White"
+                       BorderBrush="White"
+                         Content="Ответ"
+                         Cursor="Hand"
+                          x:Name="BtnTasck4"
+                           Click="BtnTasck4_Click"
+                          Background="Transparent" Height="20"/>
+
+                <Button Margin="0 5 0 0"
+                 Foreground="White"
+                   BorderBrush="White"
+                    Content="сл. задача"
+                    Cursor="Hand"
+                   x:Name="Btnw4"
+                   Click="Btnw4_Click"
+                  Background="Transparent" Height="20"/>
+
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>

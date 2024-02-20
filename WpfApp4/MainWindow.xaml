@@ -1,0 +1,68 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <Border Padding="10"
+               Background="Gray"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               CornerRadius="8">
+
+           <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+               <StackPanel Orientation="Horizontal">
+                    <TextBlock Text ="Введите значение x : "   />
+                    <TextBox Width ="40"  
+                             x:Name="Tbx1"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                        Margin="0 5 0 0">
+                   <TextBlock Text="Введите значение a : " />
+                   <TextBox Width="40"
+                            x:Name = "Tba1"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                                Margin="0 5 0 0">
+                    <TextBlock Text="Введите значение c : " />
+                    <TextBox Width="40"
+                                x:Name = "Tbc1"/>
+                </StackPanel>
+               
+                <StackPanel Orientation="Horizontal"
+                Margin="0 5 0 0">
+                    <TextBlock Text="Введите значение e : " />
+                    <TextBox Width="40"
+                x:Name = "Tbe1"/>
+                </StackPanel>
+
+                <Button  Margin=" 0 10 0 0"
+                        Foreground="White"
+                        BorderBrush="White"
+                        Content="Ответ"
+                        Cursor="Hand"
+                        x:Name="BtnTasck1"
+                        Click="BtnTasck1_Click"
+                        Background="Transparent" Height="20"/>
+
+                <Button Margin="0 5 0 0"
+                        Foreground="White"
+                          BorderBrush="White"
+                           Content="сл. задача"
+                           Cursor="Hand"
+                          x:Name="Btnw2"
+                          Click="Btnw2_Click"
+                         Background="Transparent" Height="20"/>
+
+            </StackPanel>
+       </Border>
+    </Grid>
+</Window>
